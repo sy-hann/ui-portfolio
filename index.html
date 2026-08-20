@@ -7,7 +7,7 @@
 	<meta name="description" content="Portfolio for Han Seoyeon">
 	<meta name="author" content="Han Seoyeon">
 
-	<meta property="og:title" content="한서연 포트폴리오 2024" />
+	<meta property="og:title" content="한서연 포트폴리오 2026" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://sy-hann.github.io/Portfolio_KR_2024/" />
 	<meta property="og:image" content="TBU" />
@@ -21,10 +21,9 @@
 	<script src="https://kit.fontawesome.com/e8b6b8d61d.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 	
-	<title>한서연 포트폴리오 2024</title>
+	<title>한서연 포트폴리오 2026</title>
 
 	<script type="module" src="src/js/main.js" defer></script>
-	<script type="module" src="src/js/projects.js" defer></script>
 	<script type="module" src="src/js/theme.js" defer></script>
 	<script type="module" src="src/js/active_menu.js" defer></script>
 	<script type="module" src="src/js/typeit.js" defer></script>
@@ -58,13 +57,45 @@
 		<!-- HOME -->
 		<section id="home">
 			<div class="home__container max-container">
-				<img class="home__avatar" src="assets/images/profile.jpg" alt="Seoyeon's profile">
+				<img
+					class="home__avatar"
+					src="assets/images/profile.jpg"
+					alt="Seoyeon's profile"
+				>
+
 				<div class="home__text__area">
-					<h2 class="home__title" aria-label="안녕하세요 다양한 업무 경험을 보유한 퍼블리셔 한서연입니다.">
-						안녕하세요 <br>
-						<strong class="home__title--strong">다양한 업무 경험을 보유한</strong> <br>퍼블리셔, 한서연입니다.</h2>
-					<!-- <p class="home__description"></p> -->
-					<a class="home__contact" href="#contact">Contact Me</a>
+					<p class="home__role">UI Developer</p>
+
+					<h2 class="home__title">한서연</h2>
+
+					<p class="home__headline">
+						사용자 경험과 유지보수성을 함께 고려해 UI를 구현합니다.
+					</p>
+
+					<p class="home__description">
+						React와 Vue를 기반으로 웹·모바일 UI를 구현하고,
+						반복되는 UI를 재사용 가능한 구조로 설계합니다.
+						반응형·웹 접근성과 다양한 사용자 환경을 고려해
+						일관되고 유지보수하기 좋은 화면을 만듭니다.
+					</p>
+
+					<div class="home__skills" aria-labelledby="home-skills-title">
+						<h3 id="home-skills-title" class="home__skills__title">
+							주요 기술
+						</h3>
+
+						<ul class="home__skills__list">
+							<li>React</li>
+							<li>Vue</li>
+							<li>JavaScript</li>
+							<li>HTML5</li>
+							<li>SCSS</li>
+							<li>Responsive UI</li>
+							<li>Web Accessibility</li>
+						</ul>
+					</div>
+
+					<a class="home__contact" href="#work">View Projects</a>
 				</div>
 			</div>
 		</section>
@@ -72,30 +103,41 @@
 		<!-- About me -->
 		<section id="about" class="section max-container">
 			<h2 class="title">About me</h2>
-			<p class="description"> 웹 접근성과 웹 표준을 준수하며 사용자 중심의 반응형 웹사이트 구축합니다. 또한 팀의 한 일원으로서 잘 어우러지며, 재사용성과 유지보수성이 높은 효율적인 코드 작성을 추구합니다. 새로운 업무에 대해 두려움 없이 도전하고, 적극적인 자세와 열정을 바탕으로 매 순간 실행력을 발휘하고자 노력합니다.</p>
+
 			<div class="majors bd-grid">
 				<div>
 					<h2 class="major__title">
 						<i class="fas fa-suitcase major__title__icon"></i>
 						Work Experience
 					</h2>
+
 					<div class="bd-grid">
 						<div>
-							<h3 class="major__area">웹퍼블리셔, UI 개발자</h3>
+							<h3 class="major__area">웹 퍼블리셔</h3>
 							<div class="major__box">
-								<span class="major__work">주식회사하이브랩</span>
+								<span class="major__work">가온소프트랩</span>
+								<span class="major__work">2024.12 - Present</span>
+							</div>
+						</div>
+
+						<div>
+							<h3 class="major__area">웹 퍼블리셔, UI 개발자</h3>
+							<div class="major__box">
+								<span class="major__work">주식회사 하이브랩</span>
 								<span class="major__work">2023.04 - 2024.04</span>
 							</div>
 						</div>
+
 						<div>
-							<h3 class="major__area">웹퍼블리셔</h3>
+							<h3 class="major__area">웹 퍼블리셔</h3>
 							<div class="major__box">
 								<span class="major__work">윈코커뮤니케이션</span>
 								<span class="major__work">2022.01 - 2023.03</span>
 							</div>
 						</div>
+
 						<div>
-							<h3 class="major__area">웹디자이너 & 웹퍼블리셔</h3>
+							<h3 class="major__area">웹디자이너 & 웹 퍼블리셔</h3>
 							<div class="major__box">
 								<span class="major__work">NTcube(엔티큐브)</span>
 								<span class="major__work">2021.04 - 2022.01</span>
@@ -103,19 +145,22 @@
 						</div>
 					</div>
 				</div>
+
 				<div>
 					<h2 class="major__title">
 						<i class="fas fa-book major__title__icon"></i>
 						Education
 					</h2>
+
 					<div class="bd-grid">
 						<div>
 							<h3 class="major__area">모바일 UI/UX 웹디자인</h3>
 							<div class="major__box">
-								<span class="major__work">이젠아카데미컴퓨터학원 / 한국산업인력공단</span>
+								<span class="major__work">이젠아카데미컴퓨터학원</span>
 								<span class="major__work">2019.10 - 2020.03</span>
 							</div>
 						</div>
+
 						<div>
 							<h3 class="major__area">환경원예학과 (부전공 : 경영학과)</h3>
 							<div class="major__box">
@@ -124,10 +169,12 @@
 							</div>
 						</div>
 					</div>
+
 					<h2 class="major__title">
 						<i class="fas fa-book-open major__title__icon"></i>
 						Certification
 					</h2>
+
 					<div class="bd-grid">
 						<div class="major__data">
 							<h3 class="major__area">웹디자인기능사</h3>
@@ -140,183 +187,146 @@
 				</div>
 			</div>
 
-			<div class="strengths bd-grid">
-				<div class="strength__content">
-					<i class="fas fa-laptop-code strength__icon"></i>
-					<h3 class="strength__title">UI Development</h3>
-					<p class="strength__description">웹 퍼블리싱에 대한 이해도가 높으며 유지보수성, 확장성 높은 코드를 작성하여 효율적인 업무 프로세스를 지향합니다.</p>
-				</div>
-				<div class="strength__content">
-					<i class="fas fa-users strength__icon"></i>
-					<h3 class="strength__title">Cooperative</h3>
-					<p class="strength__description">디자이너, 개발자와 가깝게 일하며, 원활한 협업을 위해 노력합니다. 서로의 의도를 이해하고 존중하며 '함께' 좋은 결과물을 만들어냅니다.</p>
-				</div>
-				<div class="strength__content">
-					<i class="fas fa-user-circle strength__icon"></i>
-					<h3 class="strength__title">User First</h3>
-					<p class="strength__description">사용자의 시각과 관점에서 먼저 생각하고 고민하는 것을 좋아하며, 사용자에게 편리하고 즐거운 서비스를 제공하는 것에 관심이 많습니다.</p>
-				</div>
-				<div class="strength__content">
-					<i class="fas fa-fire strength__icon"></i>
-					<h3 class="strength__title">Passionate</h3>
-					<p class="strength__description">새로운 기술 혹은 업무에 두려움 없이 도전하고, 적극적인 자세와 열정을 바탕으로 매순간 실행력을 발휘하고자 노력합니다.</p>
+			<div class="strengths">
+				<h2 class="major__title">
+					<i class="fas fa-code major__title__icon"></i>
+					Core Competencies
+				</h2>
+
+				<div class="strengths__list bd-grid">
+					<div class="strength__content">
+						<i class="fas fa-laptop-code strength__icon"></i>
+						<h3 class="strength__title">UI Development</h3>
+						<p class="strength__description">
+							React·Vue 기반의 웹·모바일 UI를 구현하며,
+							화면 구조와 상태를 고려해 안정적이고 유지보수하기 좋은 UI를 만듭니다.
+						</p>
+					</div>
+
+					<div class="strength__content">
+						<i class="fas fa-layer-group strength__icon"></i>
+						<h3 class="strength__title">Reusable UI</h3>
+						<p class="strength__description">
+							반복되는 UI와 패턴을 파악해 공통 컴포넌트와 재사용 가능한 구조로 설계하고,
+							화면 간 일관성과 유지보수성을 높입니다.
+						</p>
+					</div>
+
+					<div class="strength__content">
+						<i class="fas fa-universal-access strength__icon"></i>
+						<h3 class="strength__title">Responsive & Accessibility</h3>
+						<p class="strength__description">
+							반응형 UI와 웹 접근성을 고려하고,
+							큰 글씨 모드 등 다양한 사용자 환경에서도 안정적으로 사용할 수 있는 화면을 구현합니다.
+						</p>
+					</div>
+
+					<div class="strength__content">
+						<i class="fas fa-users strength__icon"></i>
+						<h3 class="strength__title">Collaboration</h3>
+						<p class="strength__description">
+							Git과 Figma를 기반으로 디자이너·개발자와 협업하며,
+							디자인 의도와 개발 환경을 고려해 구현 과정의 이슈를 조율합니다.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Work -->
-		<section id="work" class="section" >
+		<section id="work" class="section">
 			<div class="max-container">
 				<h2 class="title">Work</h2>
-				<p class="description">My projects</p>
 
-				<ul class="categories">
-					<li><button class="category category--selected" data-category="all">ALL</button></li>
-					<li><button class="category" data-category="year_2024">2024</button></li>
-					<li><button class="category" data-category="year_2023">2023</button></li>
-					<li><button class="category" data-category="year_2022">2022</button></li>
-					<li><button class="category" data-category="year_2021">2021</button></li>
-					<li><button class="category" data-category="personal">Personal</button></li>
-				</ul>
+				<section class="featured-projects" aria-labelledby="featured-projects-title">
+					<h3 id="featured-projects-title">Featured Projects</h3>
+					<p class="description">
+						Selected works focused on UI development,<br>
+						interaction, and maintainable interfaces.
+					</p>
 
-				<ul class="projects">
-					<li class="project" data-type="year_2024">
-						<a href="https://www.samsung.com/uk/smartphones/galaxy-s24/" target="_blank">
-							<img src="assets/images/portfolio_s24.png" alt="galaxy s24" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">삼성전자 Galaxy S24, S24 Ultra 제품 페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 90%</p>
+					<div class="featured-projects__list">
+						<article class="featured-project">
+							<h4 class="featured-project__title">국민하이스</h4>
+							<div class="featured-project__image-placeholder" role="img" aria-label="국민하이스 프로젝트 대표 이미지">
+								<span>국민하이스 대표 이미지</span>
 							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2023">
-						<a href="https://www.samsung.com/uk/smartphones/galaxy-z-flip5/accessories/" target="blank">
-							<img src="assets/images/portfolio_zflip5.png" alt="galaxy zflip5" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">삼성전자 Galaxy Z Flip5, Fold5 제품 페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 60%</p>
+							<ul class="featured-project__tags" aria-label="국민하이스 프로젝트 주요 기술">
+								<li>React</li>
+								<li>Mobile App</li>
+								<li>Responsive Web</li>
+								<li>UI Component Design</li>
+								<li>Accessibility</li>
+							</ul>
+							<p class="featured-project__period"><time datetime="2026">2026</time> – Present</p>
+							<a class="featured-project__link" href="/projects/highs">View Project <span aria-hidden="true">→</span></a>
+						</article>
+
+						<article class="featured-project">
+							<h4 class="featured-project__title">쿠쿠 렌탈</h4>
+							<div class="featured-project__image-placeholder" role="img" aria-label="쿠쿠 렌탈 프로젝트 대표 이미지">
+								<span>쿠쿠 렌탈 대표 이미지</span>
 							</div>
-						</a>
-					</li>
-					
-					<li class="project" data-type="year_2023">
-						<a href="https://www.samsung.com/global/galaxy/" target="blank">
-							<img src="assets/images/portfolio_galaxy.png" alt="galaxy s24 ultra" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">삼성전자 Galaxy 글로벌 페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 40%</p>
+							<ul class="featured-project__tags" aria-label="쿠쿠 렌탈 프로젝트 주요 기술">
+								<li>Vue</li>
+								<li>Admin</li>
+								<li>Mobile App</li>
+								<li>DataTable</li>
+								<li>Interaction</li>
+								<li>Component Customization</li>
+							</ul>
+							<p class="featured-project__period"><time datetime="2025">2025</time> – <time datetime="2026">2026</time></p>
+							<a class="featured-project__link" href="/projects/cuckoo-rental">View Project <span aria-hidden="true">→</span></a>
+						</article>
+
+						<article class="featured-project">
+							<h4 class="featured-project__title">Samsung Galaxy</h4>
+							<img class="featured-project__image" src="assets/images/portfolio_galaxy.png" alt="Samsung Galaxy 글로벌 웹 프로젝트">
+							<ul class="featured-project__tags" aria-label="Samsung Galaxy 프로젝트 주요 역량">
+								<li>Global Web</li>
+								<li>Responsive UI</li>
+								<li>Cross-browser</li>
+								<li>Large-scale Collaboration</li>
+							</ul>
+							<p class="featured-project__period"><time datetime="2023">2023</time> – <time datetime="2024">2024</time></p>
+							<a class="featured-project__link" href="https://www.samsung.com/global/galaxy/" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">→</span></a>
+						</article>
+					</div>
+				</section>
+
+				<section class="other-projects" aria-labelledby="other-projects-title">
+					<h3 id="other-projects-title">Other Projects</h3>
+					<ul class="other-projects__list">
+						<li class="other-project">
+							<p class="other-project__period">2025–2026</p>
+							<div>
+								<h4 class="other-project__title">LX Pantos</h4>
+								<p class="other-project__description">Logistics system · UI Publishing</p>
 							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2023">
-						<a href="http://swad.winko.net" target="blank">
-							<img src="assets/images/portfolio_swad.jpg" alt="swadi secret" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">스와디시크릿 홈페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 100%</p>
+						</li>
+						<li class="other-project">
+							<p class="other-project__period">2025</p>
+							<div>
+								<h4 class="other-project__title">C:LOVER</h4>
+								<p class="other-project__description">Education platform · UI Publishing</p>
 							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2022">
-						<a href="http://gmedics.winko.net" target="blank">
-							<img src="assets/images/portfolio_gmedics.jpg" alt="gmedics" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">지메딕스코리아 홈페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 90%</p>
+						</li>
+						<li class="other-project">
+							<p class="other-project__period">2024–2025</p>
+							<div>
+								<h4 class="other-project__title">Metabid</h4>
+								<p class="other-project__description">Operation · Maintenance</p>
 							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2022">
-						<a href="http://webdev.winko.net/website/worldace/main/main.php" target="blank">
-							<img src="assets/images/portfolio_worldace.jpg" alt="world ace" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">월드에이스 홈페이지</h3>
-								<p class="project__subtitle">Responsive / 기여도 100%</p>
+						</li>
+						<li class="other-project">
+							<p class="other-project__period">2025</p>
+							<div>
+								<h4 class="other-project__title">Cuckoo Business Systems</h4>
+								<p class="other-project__description">5 internal systems</p>
 							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2022">
-						<a href="https://www.kiwie.or.kr/" target="blank">
-							<img src="assets/images/portfolio_kiwie.jpg" alt="kiwie expo" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">여성발명협회 expo 참가기업 홈페이지(리뉴얼)</h3>
-								<p class="project__subtitle">Responsive / 기여도 90%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2022">
-						<a href="http://adgb-fktucc.kr/" target="blank">
-							<img src="assets/images/portfolio_andong.png" alt="kiwie expo" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">한국노총안동지부 웹사이트</h3>
-								<p class="project__subtitle">Responsive / 디자인 50% 퍼블리싱 90%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2021">
-						<a href="http://taewoncind.com/" target="blank">
-							<img src="assets/images/portfolio_taewon.png" alt="taewon CI&D" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">태원 CI&D 웹사이트</h3>
-								<p class="project__subtitle">Responsive / 디자인 80% 퍼블리싱 100%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2021">
-						<a href="http://gamegeneration.or.kr/" target="blank">
-							<img src="assets/images/portfolio_gamegeneration.png" alt="game generation" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">게임제너레이션</h3>
-								<p class="project__subtitle">Responsive / 디자인 90% 퍼블리싱 100%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="year_2021">
-						<a href="http://www.mycollegegac.com/" target="blank">
-							<img src="assets/images/portfolio_glc.png" alt="global learning center" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">글로벌러닝센터</h3>
-								<p class="project__subtitle">Responsive / 디자인 90% 퍼블리싱 100%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="personal">
-						<a href="https://sy-hann.github.io/RestaurantTasty/" target="blank">
-							<img src="assets/images/portfolio_tasty.jpg" alt="restaurant tasty" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">Restaurant Tasty</h3>
-								<p class="project__subtitle">Responsive / 100%</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="personal">
-						<a href="https://marvelapp.com/prototype/4jgabg2/screen/64425265" target="blank">
-							<img src="assets/images/portfolio_golden.jpg" alt="golden child" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">금쪽같은 내새끼</h3>
-								<p class="project__subtitle">Mobile / Prototype</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="personal">
-						<a href="https://sy-hann.github.io/CarrotMinigame/" target="blank">
-							<img src="assets/images/portfolio_carrotgame.gif" alt="Carrot minigame" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">당근 미니게임</h3>
-								<p class="project__subtitle">Fixed / JavaScript</p>
-							</div>
-						</a>
-					</li>
-					<li class="project" data-type="personal">
-						<a href="https://sy-hann.github.io/ShoppingmallMinigame/" target="blank">
-							<img src="assets/images/portfolio_shoppingmall.gif" alt="Shoppingmall minigame" class="project__img">
-							<div class="project__data">
-								<h3 class="project__title">쇼핑몰 미니게임</h3>
-								<p class="project__subtitle">Fixed / JavaScript</p>
-							</div>
-						</a>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</section>
 			</div>
 		</section>
 
@@ -369,21 +379,40 @@
 	<footer id="contact" class="section">
 		<div class="max-container">
 			<h2 class="title">Let's talk</h2>
-			<p class="description">seoyon0523@gmail.com</p>
-			<p class="description">010-4873-3516</p>
+
+			<p class="description">
+				<a href="mailto:your-email@example.com" class="contact__email">
+					your-email@example.com
+				</a>
+			</p>
+
 			<ul class="contact__links">
 				<li>
-					<a href="https://github.com/sy-hann" target="_blank" class="contact__link" title="my github link">
-						<i class="fab fa-github-square"></i>
+					<a
+						href="https://github.com/sy-hann"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="contact__link"
+						aria-label="GitHub"
+					>
+						<i class="fab fa-github-square" aria-hidden="true"></i>
 					</a>
 				</li>
+
 				<li>
-					<a href="https://www.linkedin.com/in/seo-yeon-h-1907291aa/" target="_blank" class="contact__link" title="my linkedin link">
-						<i class="fab fa-linkedin"></i>
+					<a
+						href="https://www.linkedin.com/in/seo-yeon-h-1907291aa/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="contact__link"
+						aria-label="LinkedIn"
+					>
+						<i class="fab fa-linkedin" aria-hidden="true"></i>
 					</a>
 				</li>
 			</ul>
-			<p class="contact__text">&#169; 2024 Seoyeon Han.</p>
+
+			<p class="contact__text">&copy; 2026 Seoyeon Han.</p>
 		</div>
 	</footer>
 </body>
