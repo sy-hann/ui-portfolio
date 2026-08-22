@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="한서연 웹 퍼블리셔의 쿠쿠 렌탈 프로젝트 상세 사례">
+	<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../../src/css/style.css">
+	<title>쿠쿠 렌탈 | 한서연 포트폴리오</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__logo"><h1 class="header__logo__title"><a href="../../index.html">SY H.</a></h1></div>
+		<nav class="header__nav" aria-label="프로젝트 탐색"><ul class="header__menu"><li><a class="header__menu__item" href="../../index.html#work">All Projects</a></li></ul></nav>
+	</header>
+
+	<main class="project-detail">
+		<article>
+			<header class="project-detail__hero section max-container">
+				<p class="project-detail__eyebrow">Featured Project</p>
+				<h2 class="project-detail__title">쿠쿠 렌탈</h2>
+				<p class="project-detail__subtitle">Rental Admin System &amp; Mobile App</p>
+				<figure class="project-detail__media project-detail__media--hero"><div role="img" aria-label="쿠쿠 렌탈 프로젝트 대표 이미지 영역">쿠쿠 렌탈 대표 이미지</div></figure>
+			</header>
+
+			<section class="project-detail__overview section max-container" aria-labelledby="overview-title">
+				<h3 id="overview-title">Overview</h3>
+				<p>렌탈 업무를 위한 <strong>관리자 시스템과 직원용 모바일 앱 UI 구축 프로젝트</strong>입니다.</p>
+				<p>Vue 기반으로 관리자 시스템의 공통 UI와 복잡한 업무 화면을 구현하고, PrimeVue DataTable을 요구사항에 맞게 커스터마이징했습니다. 모바일 앱에서는 모바일 사용 환경을 고려한 UI를 구축했습니다.</p>
+				<h4>Project Info</h4>
+				<dl class="project-detail__info">
+					<div><dt>Period</dt><dd><time datetime="2025-12">2025.12</time> — <time datetime="2026-06">2026.06</time></dd></div>
+					<div><dt>Contribution</dt><dd>Admin 100% / Mobile 60%</dd></div>
+					<div><dt>Role</dt><dd>UI Development</dd></div>
+					<div><dt>Tech</dt><dd>Vue · JavaScript · SCSS · PrimeVue · Git</dd></div>
+				</dl>
+				<h4>My Role</h4>
+				<ul>
+					<li>관리자 시스템 공통 UI 및 재사용 가능한 컴포넌트 설계</li>
+					<li>PrimeVue DataTable 인터랙션 및 UI 커스터마이징</li>
+					<li>복잡한 업무 화면의 레이아웃 및 인터랙션 구현</li>
+					<li>직원용 모바일 앱 UI 구축</li>
+				</ul>
+			</section>
+
+			<section class="project-detail__experience section max-container" aria-labelledby="admin-architecture-title">
+				<p class="project-detail__number">01</p>
+				<h3 id="admin-architecture-title">Admin UI Architecture</h3>
+				<h4>Challenge</h4>
+				<p>관리자 시스템 특성상 여러 화면에서 유사한 검색 조건과 입력 UI가 반복되고, 화면마다 데이터 구성과 레이아웃에는 차이가 있었습니다.</p>
+				<h4>Approach</h4>
+				<p>반복되는 UI와 화면별 차이를 분석해 공통화할 영역과 개별 처리할 영역을 구분했습니다.</p>
+				<h4>Implementation</h4>
+				<ul>
+					<li>반복되는 검색 조건을 공통 UI로 구성</li>
+					<li>동일한 입력 구조를 페이지와 팝업에서 재사용</li>
+					<li>화면 구성에 따라 유연하게 사용할 수 있는 UI 구조 설계</li>
+				</ul>
+				<div class="project-detail__media-group">
+					<figure class="project-detail__media"><div role="img" aria-label="검색 필터 UI 이미지 영역">검색 필터 UI</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="8열과 4열 UI 비교 영역">8열 / 4열 UI</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="페이지와 팝업 UI 비교 영역">페이지 / 팝업 비교</div></figure>
+				</div>
+				<h4>Result</h4>
+				<p>반복 구현을 줄이고 화면 간 UI 일관성을 확보했습니다. 공통 영역 수정 시 여러 화면에 동일하게 반영할 수 있도록 유지보수성을 개선했습니다.</p>
+			</section>
+
+			<section class="project-detail__experience section max-container" aria-labelledby="datatable-title">
+				<p class="project-detail__number">02</p>
+				<h3 id="datatable-title">DataTable Customization</h3>
+				<h4>Challenge</h4>
+				<p>관리자 시스템의 대량 데이터를 효율적으로 확인하고 사용자가 업무 환경에 맞게 테이블을 조정할 수 있어야 했습니다.</p>
+				<h4>Approach</h4>
+				<p>PrimeVue DataTable의 기본 기능을 검토하고 요구사항별로 필요한 인터랙션과 커스터마이징 범위를 분석했습니다.</p>
+				<h4>Implementation</h4>
+				<ul><li>Drag &amp; Drop</li><li>Column Resize</li><li>Column Reorder</li><li>프로젝트 UI에 맞춘 DataTable 스타일 및 동작 커스터마이징</li></ul>
+				<figure class="project-detail__media"><div role="img" aria-label="기본 테이블과 커스터마이징 결과 비교 영역">기본 Table → Customization</div></figure>
+				<div class="project-detail__media-group">
+					<figure class="project-detail__media"><div role="img" aria-label="컬럼 크기 변경 UI 이미지 영역">Resize</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="컬럼 순서 변경 UI 이미지 영역">Reorder</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="드래그 앤 드롭 UI 이미지 영역">Drag &amp; Drop</div></figure>
+				</div>
+				<h4>Result</h4>
+				<p>업무 특성에 맞게 테이블을 조작할 수 있는 관리자 UI를 구현했습니다.</p>
+			</section>
+
+			<section class="project-detail__experience section max-container" aria-labelledby="responsive-mobile-title">
+				<p class="project-detail__number">03</p>
+				<h3 id="responsive-mobile-title">Responsive Layout / Mobile UI</h3>
+				<h4>Challenge</h4>
+				<p>PC 관리자 시스템과 모바일 앱이라는 서로 다른 업무 환경에 맞는 UI가 필요했습니다.</p>
+				<h4>Implementation</h4>
+				<div class="project-detail__feature"><h5>Admin</h5><ul><li>다양한 화면 구조에 대응하는 레이아웃</li><li>Split Layout / Resizer</li><li>LNB 상태에 따른 콘텐츠 영역 대응</li><li>내부 스크롤 및 높이 제어</li></ul></div>
+				<div class="project-detail__feature"><h5>Mobile</h5><ul><li>Top App Bar</li><li>Bottom Navigation</li><li>Floating UI</li><li>모바일 환경에 최적화된 화면 구성</li></ul></div>
+				<div class="project-detail__media-group">
+					<figure class="project-detail__media"><div role="img" aria-label="관리자 시스템 UI 이미지 영역">Admin UI</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="분할 레이아웃 인터랙션 이미지 영역">Split Layout interaction</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="모바일 UI 이미지 영역">Mobile UI</div></figure>
+					<figure class="project-detail__media"><div role="img" aria-label="모바일 내비게이션과 앱바 이미지 영역">Navigation / App Bar</div></figure>
+				</div>
+			</section>
+		</article>
+
+		<nav class="project-detail__pagination section max-container" aria-label="프로젝트 페이지 탐색">
+			<a href="../highs/">← Previous Project: 국민하이스</a>
+			<a href="../../index.html#work">All Projects</a>
+			<a href="../galaxy/">Next Project: Samsung Galaxy →</a>
+		</nav>
+	</main>
+</body>
+</html>

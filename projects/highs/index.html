@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="한서연 웹 퍼블리셔의 국민하이스 프로젝트 상세 사례">
+	<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../../src/css/style.css">
+	<title>국민하이스 | 한서연 포트폴리오</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__logo"><h1 class="header__logo__title"><a href="../../index.html">SY H.</a></h1></div>
+		<nav class="header__nav" aria-label="프로젝트 탐색">
+			<ul class="header__menu"><li><a class="header__menu__item" href="../../index.html#work">All Projects</a></li></ul>
+		</nav>
+	</header>
+
+	<main class="project-detail">
+		<article>
+			<header class="project-detail__hero section max-container">
+				<p class="project-detail__eyebrow">Featured Project</p>
+				<h2 class="project-detail__title">국민하이스</h2>
+				<p class="project-detail__subtitle">사용자 권한별 Mobile App &amp; Responsive Web</p>
+				<figure class="project-detail__media project-detail__media--hero">
+					<div role="img" aria-label="국민하이스 프로젝트 대표 이미지 영역">국민하이스 대표 이미지</div>
+				</figure>
+			</header>
+
+			<section class="project-detail__overview section max-container" aria-labelledby="overview-title">
+				<h3 id="overview-title">Overview</h3>
+				<h4>프로젝트 소개</h4>
+				<p>국민하이스의 사용자 권한별 모바일 앱과 반응형 웹을 구축한 프로젝트입니다. React 기반의 공통 UI 컴포넌트를 설계하고 앱·웹 환경, 사용자 권한, 화면 크기와 큰 글씨 모드에 따라 달라지는 UI를 구현했습니다.</p>
+
+				<h4>Project Info</h4>
+				<dl class="project-detail__info">
+					<div><dt>Period</dt><dd><time datetime="2026-06">2026.06</time> — Present</dd></div>
+					<div><dt>Contribution</dt><dd>100%</dd></div>
+					<div><dt>Role</dt><dd>UI Development</dd></div>
+					<div><dt>Tech</dt><dd>React · JavaScript · SCSS · Git</dd></div>
+				</dl>
+
+				<h4>My Role</h4>
+				<ul>
+					<li>공통 UI 컴포넌트 설계</li>
+					<li>사용자 권한별 UI 구현</li>
+					<li>반응형 UI 구현</li>
+					<li>큰 글씨 모드 대응</li>
+				</ul>
+			</section>
+
+			<section class="project-detail__experience section max-container" aria-labelledby="experience-architecture-title">
+				<p class="project-detail__number">01</p>
+				<h3 id="experience-architecture-title">Component &amp; UI Architecture</h3>
+				<p>앱·웹 환경을 고려한 프로젝트 구조와 재사용 가능한 공통 UI 컴포넌트를 설계했습니다.</p>
+
+				<h4>Challenge</h4>
+				<p>Highs Pro App과 Highs App/Web을 구축하면서 공통 UI를 재사용하는 동시에 App/Web 환경별 UI 차이에 대응해야 했습니다.</p>
+				<h4>Approach</h4>
+				<p>공통으로 사용할 영역과 환경별로 분리할 영역을 구분했습니다.</p>
+				<h4>Implementation</h4>
+				<ul>
+					<li>App / Web Layout 및 Route 분리</li>
+					<li>공통 Style 영역과 환경별 Style 분리</li>
+					<li>반복 UI의 공통 컴포넌트화</li>
+				</ul>
+				<figure class="project-detail__media"><div role="img" aria-label="국민하이스 프로젝트 구조도 영역">간단한 프로젝트 구조도</div></figure>
+				<figure class="project-detail__media"><div role="img" aria-label="국민하이스 공통 컴포넌트 UI 이미지 영역">공통 Component 실제 UI</div></figure>
+				<h4>Result</h4>
+				<p>공통 UI의 일관성을 유지하면서 환경별 UI 변경에 대응할 수 있는 구조를 구성했습니다.</p>
+			</section>
+
+			<section class="project-detail__experience section max-container" aria-labelledby="experience-adaptive-title">
+				<p class="project-detail__number">02</p>
+				<h3 id="experience-adaptive-title">Adaptive UI</h3>
+				<div class="project-detail__feature">
+					<h4>Role-based UI</h4>
+					<figure class="project-detail__media"><div role="img" aria-label="사용자 권한 A와 권한 B에 따른 화면 비교 영역">권한 A 화면 ↔ 권한 B 화면</div></figure>
+				</div>
+				<div class="project-detail__feature">
+					<h4>Responsive UI</h4>
+					<figure class="project-detail__media"><div role="img" aria-label="모바일과 데스크톱 반응형 화면 비교 영역">Mobile → Desktop</div></figure>
+				</div>
+				<div class="project-detail__feature">
+					<h4>Large Text Mode</h4>
+					<figure class="project-detail__media"><div role="img" aria-label="기본 글씨와 큰 글씨 모드 비교 영역">Default → Large Text</div></figure>
+				</div>
+			</section>
+		</article>
+
+		<nav class="project-detail__pagination section max-container" aria-label="프로젝트 페이지 탐색">
+			<a href="../../index.html#work">← All Projects</a>
+			<a href="../cuckoo-rental/">Next Project: Cuckoo Rental →</a>
+		</nav>
+	</main>
+</body>
+</html>
