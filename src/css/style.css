@@ -429,6 +429,23 @@ button:focus {
   padding-bottom: 8rem;
 }
 
+.featured-project__image,
+.featured-project__image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  aspect-ratio: 16/9;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  background-color: #666;
+  color: #ffffff;
+}
+
+.featured-project__image {
+  object-fit: cover;
+}
+
 /* #work::after {
 	content: '';
 	position: absolute;
@@ -542,6 +559,45 @@ button:focus {
     grid-template-columns: auto;
   }
 }
+.project-detail__media {
+  width: 50%;
+  aspect-ratio: 16/9;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  background-color: #666;
+  color: #ffffff;
+}
+
+.project-detail__media > img,
+.project-detail__media > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-detail__media > img {
+  object-fit: cover;
+}
+
+.project-detail__media > div {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-detail__media-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-detail__media-group {
+    grid-template-columns: 1fr;
+  }
+}
+
 .scroll-top {
   position: fixed;
   bottom: 1.5rem;
