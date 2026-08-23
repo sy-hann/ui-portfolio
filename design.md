@@ -10,12 +10,18 @@ Modern-minimal with a technical editorial rhythm.
 - Project detail pages: editorial case study with a broad hero, scan-first metadata, narrow narrative text and alternating evidence blocks.
 
 ## Theme
-- Paper: warm off-white
-- Ink: near-black green
-- Muted ink: mineral grey-green
-- Rule: low-contrast warm grey
-- Accent: restrained mint green
-- Dark mode: deep forest paper with pale ink
+Warm Sage: a warm cream paper paired with deep forest ink and a restrained sage accent.
+
+- `--color-paper`: `oklch(96.5% 0.014 95)`
+- `--color-paper-2`: `oklch(93% 0.016 95)`
+- `--color-surface`: `oklch(98.5% 0.008 95)`
+- `--color-ink`: `oklch(22% 0.025 155)`
+- `--color-ink-2`: `oklch(45% 0.025 155)`
+- `--color-rule`: `oklch(83% 0.018 115)`
+- `--color-accent`: `oklch(82% 0.075 145)`
+- `--color-accent-strong`: `oklch(48% 0.105 155)`
+- `--color-focus`: `oklch(50% 0.12 155)`
+- Dark mode: deep forest paper, mineral-green surfaces, pale neutral ink and a brighter sage accent.
 
 ## Typography
 - Display: system sans-serif, 650–700, roman
@@ -40,4 +46,3 @@ Modern-minimal with a technical editorial rhythm.
 - Project screenshots are evidence, not decoration; no fake browser or device chrome.
 - Featured work receives substantially more space than the project archive.
 - Detail pages preserve Overview, Project Info, My Role and Key Experience content.
-

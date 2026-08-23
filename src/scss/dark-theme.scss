@@ -1,0 +1,163 @@
+body.dark-theme {
+	// Dark mode token overrides. Components in redesign.scss consume these
+	// variables, so text, surfaces and borders stay legible throughout the site.
+	--color-paper: var(--color-dark-paper);
+	--color-paper-2: var(--color-dark-surface);
+	--color-surface: var(--color-dark-surface);
+	--color-ink: var(--color-dark-ink);
+	--color-ink-2: var(--color-dark-ink-2);
+	--color-rule: var(--color-dark-rule);
+	--color-accent: var(--color-dark-accent);
+	--color-accent-ink: var(--color-dark-paper);
+	--color-accent-strong: var(--color-dark-accent-strong);
+	--color-focus: var(--color-dark-focus);
+
+	$color-primary: $color-beige;
+	$color-accent: $color-green;
+	$color-text: $color-white;
+	$color-bg: $color-dark-green;
+	
+	background-color: var(--color-paper);
+	color: var(--color-ink);
+	.title,
+	.description {
+		color: $color-text;
+	}
+	& .header {
+		&--bg {
+			background-color: color-mix(in oklch, var(--color-dark-paper) 88%, transparent);
+		}
+		a, &__toggle {
+			color: $color-text;
+		}
+		&__menu__item {
+			&--active {
+				color: $color-black!important;
+				border: 1px solid $color-accent;
+			}
+			
+			&:hover {
+				border-color: $color-text;
+			}
+		}
+		&--active {
+			background-color: var(--color-dark-paper);
+		}
+	}
+	.change-theme {
+		color: $color-text;
+	}
+
+	#home {
+		background: $dark-home-bg-gradient;
+		color: $color-text;
+		&::after {
+			background-color: $color-dark-green;
+		}
+	}
+	.home {
+		&__title {
+			&--strong {
+				color: $color-accent;
+			}
+		}
+	}
+
+	#work::after {
+		bottom: -1px;
+		background-color: var(--color-dark-surface);
+	}
+	.major {
+		&__title,
+		&__area,
+		&__work {
+			color: $color-primary;
+		}
+	}
+	#testimonial {
+		background-color: var(--color-paper-2);
+		color: var(--color-ink);
+	}
+	#contact {
+		background-color: var(--color-paper-2);
+		color: var(--color-ink);
+		&::after {
+			background-color: $color-dark-green;
+		}
+	}
+	.contact {
+		&__link,
+		&__text {
+			color: $color-text;
+		}
+		&__link {
+			&:hover{
+				color: $color-bg;
+			}
+		}
+	}
+
+	// Explicit fallbacks for legacy components that still use fixed light colors.
+	.home__description,
+	.major__work,
+	.strength__description,
+	.featured-project__subtitle,
+	.featured-project__summary,
+	.other-project__period,
+	.other-project__description,
+	.project-detail__subtitle,
+	.project-detail__overview > p,
+	.project-detail__experience > p,
+	.project-detail__info dt {
+		color: var(--color-ink-2);
+	}
+
+	.strength__content,
+	.project,
+	.project-detail__feature,
+	.featured-project__image,
+	.featured-project__image-placeholder,
+	.project-detail__media,
+	.testimonial__bubble {
+		background-color: var(--color-surface);
+		border-color: var(--color-rule);
+		color: var(--color-ink);
+	}
+
+	.project__title,
+	.project__subtitle,
+	.strength__title {
+		color: var(--color-ink);
+	}
+
+	.category,
+	.featured-project__link {
+		background-color: var(--color-surface);
+		border-color: var(--color-rule);
+		color: var(--color-ink);
+
+		&:hover,
+		&--selected {
+			background-color: var(--color-accent);
+			border-color: var(--color-accent);
+			color: var(--color-accent-ink);
+		}
+	}
+
+	.testimonial__bubble__name {
+		color: var(--color-accent-strong);
+		filter: none;
+	}
+
+	.scroll-top {
+		background-color: var(--color-surface);
+		border-color: var(--color-rule);
+
+		&__icon { color: var(--color-ink); }
+		&:hover {
+			background-color: var(--color-accent);
+			.scroll-top__icon { color: var(--color-accent-ink); }
+		}
+	}
+
+}

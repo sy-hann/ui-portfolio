@@ -1,18 +1,22 @@
 :root {
-  --color-paper: oklch(96.5% 0.012 92);
-  --color-paper-2: oklch(92.5% 0.018 92);
-  --color-surface: oklch(99% 0.006 92);
-  --color-ink: oklch(20% 0.025 158);
-  --color-ink-2: oklch(42% 0.022 158);
-  --color-rule: oklch(81% 0.018 92);
-  --color-accent: oklch(82% 0.11 148);
-  --color-accent-ink: oklch(20% 0.025 158);
-  --color-accent-strong: oklch(46% 0.105 155);
-  --color-focus: oklch(52% 0.15 250);
-  --color-dark-paper: oklch(19% 0.038 158);
-  --color-dark-surface: oklch(24% 0.038 158);
-  --color-dark-ink: oklch(94% 0.012 92);
-  --color-dark-rule: oklch(43% 0.032 158);
+  --color-paper: oklch(96.5% 0.014 95);
+  --color-paper-2: oklch(93% 0.016 95);
+  --color-surface: oklch(98.5% 0.008 95);
+  --color-ink: oklch(22% 0.025 155);
+  --color-ink-2: oklch(45% 0.025 155);
+  --color-rule: oklch(83% 0.018 115);
+  --color-accent: oklch(82% 0.075 145);
+  --color-accent-ink: oklch(22% 0.025 155);
+  --color-accent-strong: oklch(48% 0.105 155);
+  --color-focus: oklch(50% 0.12 155);
+  --color-dark-paper: oklch(20% 0.025 155);
+  --color-dark-surface: oklch(27% 0.03 155);
+  --color-dark-ink: oklch(95% 0.01 110);
+  --color-dark-ink-2: oklch(78% 0.018 145);
+  --color-dark-rule: oklch(42% 0.025 155);
+  --color-dark-accent: oklch(80% 0.09 145);
+  --color-dark-accent-strong: oklch(74% 0.115 150);
+  --color-dark-focus: oklch(82% 0.12 150);
 
   --font-display: "Space Grotesk", Arial, sans-serif;
   --font-body: "Open Sans", Arial, sans-serif;

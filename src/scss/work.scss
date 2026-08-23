@@ -4,22 +4,6 @@
 	padding-bottom: 8rem;
 }
 
-.featured-project__image,
-.featured-project__image-placeholder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	aspect-ratio: 16 / 9;
-	margin: 1.5rem 0;
-	overflow: hidden;
-	background-color: #666;
-	color: $color-white;
-}
-
-.featured-project__image {
-	object-fit: cover;
-}
 /* #work::after {
 	content: '';
 	position: absolute;
