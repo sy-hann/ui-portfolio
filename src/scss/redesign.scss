@@ -274,7 +274,7 @@ button:disabled,
   margin: var(--space-xl) 0 0;
   aspect-ratio: 16 / 9;
 }
-.project-detail--galaxy .project-detail__media { width: min(100%, 340px); }
+.project-detail--galaxy .project-detail__media { width: 100%; }
 .project-detail__media > div { padding: var(--space-lg); }
 .project-detail__overview { display: grid; grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr); gap: var(--space-lg) clamp(2rem, 8vw, 8rem); border-top: var(--rule-thin) solid var(--color-ink); }
 .project-detail__overview > h3,
@@ -299,7 +299,8 @@ button:disabled,
 .project-detail__experience > h3 { grid-row: 1; margin-bottom: var(--space-lg); }
 .project-detail__experience > h4 { margin-top: var(--space-xl); padding-top: var(--space-sm); border-top: var(--rule-thin) solid var(--color-rule); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; }
 .project-detail__experience > p { max-width: var(--measure); color: var(--color-ink-2); font-size: 1.05rem; }
-.project-detail__media-group { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md); }
+.project-detail__media-group { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+.project-detail--galaxy .project-detail__media-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-detail__media-group .project-detail__media { margin: 0; }
 .project-detail__feature { margin-top: var(--space-lg); padding: var(--space-lg); border: var(--rule-thin) solid var(--color-rule); background: var(--color-surface); }
 .project-detail__feature h5 { margin: 0 0 var(--space-md); font-size: var(--text-lg); }
@@ -352,7 +353,8 @@ body.dark-theme .featured-project__image-placeholder { background: var(--color-d
   .project-detail__experience > .project-detail__number,
   .project-detail__experience > h3 { grid-row: auto; }
   .project-detail__info,
-  .project-detail__media-group { grid-template-columns: minmax(0, 1fr); }
+  .project-detail__media-group,
+  .project-detail--galaxy .project-detail__media-group { grid-template-columns: minmax(0, 1fr); }
   .project-detail__pagination { flex-direction: column; align-items: flex-start; }
 }
 
