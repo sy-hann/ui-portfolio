@@ -160,6 +160,7 @@ button:disabled,
 #about { border-top: var(--rule-thin) solid var(--color-rule); }
 .majors { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: clamp(3rem, 9vw, 8rem); }
 .major__title { margin: 0 0 var(--space-lg); color: var(--color-ink); font-family: var(--font-display); font-size: var(--text-lg); }
+.major__title--certification { margin-top: 4rem; }
 .major__title__icon,
 .major__area { margin-bottom: var(--space-2xs); color: var(--color-ink); font-size: var(--text-md); font-weight: 600; }
 .major__box { padding-bottom: var(--space-md); border-color: var(--color-rule); }

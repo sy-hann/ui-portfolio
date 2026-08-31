@@ -850,6 +850,10 @@ button:disabled,
   font-size: var(--text-lg);
 }
 
+.major__title--certification {
+  margin-top: 4rem;
+}
+
 .major__title__icon,
 .major__area {
   margin-bottom: var(--space-2xs);
