@@ -350,6 +350,26 @@ body.dark-theme .featured-project__image-placeholder { background: var(--color-d
   .project-detail__overview > *,
   .project-detail__experience > *,
   .project-detail__experience > .project-detail__number { grid-column: 1; }
+  .project-detail__overview > h3,
+  .project-detail__overview > p,
+  .project-detail__overview > h4,
+  .project-detail__overview > ul,
+  .project-detail__overview > dl { grid-column: 1; }
+  .project-detail__overview { gap: 0; }
+  .project-detail__overview > * { min-width: 0; width: 100%; }
+  .project-detail__overview > h3 {
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: var(--space-lg);
+    overflow-wrap: normal;
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+  .project-detail__overview > p { margin: 0; }
+  .project-detail__overview > p + p { margin-top: var(--space-sm); }
+  .project-detail__overview > h4 { margin: var(--space-xl) 0 var(--space-sm); }
+  .project-detail__overview > h3 + h4 { margin-top: 0; }
+  .project-detail__info dd { overflow-wrap: anywhere; }
   .project-detail__experience > .project-detail__number,
   .project-detail__experience > h3 { grid-row: auto; }
   .project-detail__info,
