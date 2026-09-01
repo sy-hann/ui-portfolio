@@ -47,7 +47,7 @@ strong { font-weight: 700; }
 }
 
 .header {
-  min-height: 4.5rem;
+  min-height: 1.5rem;
   padding: var(--space-sm) max(var(--space-md), calc((100vw - var(--container)) / 2));
   border-bottom: var(--rule-thin) solid transparent;
   color: var(--color-ink);
@@ -202,7 +202,7 @@ button:disabled,
   border-bottom: var(--rule-thin) solid var(--color-rule);
 }
 .featured-project:nth-child(even) { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); grid-template-areas: "title image" "subtitle image" "tags image" "summary image" "meta image" "link image"; }
-.featured-project__title { word-break: break-word;grid-area: title; margin-bottom: var(--space-xs); font-family: var(--font-display); font-size: clamp(2rem, 4vw, 4rem); letter-spacing: -0.045em; line-height: 1; overflow-wrap: anywhere; }
+.featured-project__title { word-break: keep-all;grid-area: title; margin-bottom: var(--space-xs); font-family: var(--font-display); font-size: clamp(2rem, 4vw, 4rem); letter-spacing: -0.045em; line-height: 1; overflow-wrap: anywhere; }
 .featured-project__subtitle { grid-area: subtitle; margin-bottom: var(--space-lg); color: var(--color-ink-2); font-size: var(--text-lg); line-height: 1.45; }
 .featured-project__image,
 .featured-project__image-placeholder {
@@ -261,8 +261,10 @@ button:disabled,
 .project-detail__media--hero { grid-area: media; }
 .project-detail__media,
 .project-detail__media-group .project-detail__media {
+  min-width: 0;
   width: 100%;
   margin: var(--space-xl) 0;
+  overflow: clip;
   border: var(--rule-thin) solid var(--color-rule);
   border-radius: var(--radius-sm);
   background: var(--color-paper-2);
@@ -276,6 +278,27 @@ button:disabled,
 }
 .project-detail--galaxy .project-detail__media { width: 100%; }
 .project-detail__media > div { padding: var(--space-lg); }
+.project-detail__media > img,
+.project-detail__media > video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.project-detail__media > video {
+  background: var(--color-media-backdrop);
+  object-fit: contain;
+}
+.project-detail__media > figcaption {
+  padding: var(--space-xs) var(--space-sm);
+  border-top: var(--rule-thin) solid var(--color-rule);
+  background: var(--color-surface);
+  color: var(--color-ink-2);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  height: 100%;
+}
 .project-detail__overview { display: grid; grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr); gap: var(--space-lg) clamp(2rem, 8vw, 8rem); border-top: var(--rule-thin) solid var(--color-ink); }
 .project-detail__overview > h3,
 .project-detail__experience > h3 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 4rem); letter-spacing: -0.04em; line-height: 1; overflow-wrap: anywhere; }
@@ -300,6 +323,8 @@ button:disabled,
 .project-detail__experience > h4 { margin-top: var(--space-xl); padding-top: var(--space-sm); border-top: var(--rule-thin) solid var(--color-rule); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; }
 .project-detail__experience > p { max-width: var(--measure); color: var(--color-ink-2); font-size: 1.05rem; }
 .project-detail__media-group { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+.project-detail__media-group--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project-detail__media-group--triptych { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .project-detail--galaxy .project-detail__media-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-detail__media-group .project-detail__media { margin: 0; }
 .project-detail__feature { margin-top: var(--space-lg); padding: var(--space-lg); border: var(--rule-thin) solid var(--color-rule); background: var(--color-surface); }
@@ -374,6 +399,8 @@ body.dark-theme .featured-project__image-placeholder { background: var(--color-d
   .project-detail__experience > h3 { grid-row: auto; }
   .project-detail__info,
   .project-detail__media-group,
+  .project-detail__media-group--pair,
+  .project-detail__media-group--triptych,
   .project-detail--galaxy .project-detail__media-group { grid-template-columns: minmax(0, 1fr); }
   .project-detail__pagination { flex-direction: column; align-items: flex-start; }
 }

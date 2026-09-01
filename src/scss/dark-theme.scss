@@ -130,6 +130,16 @@ body.dark-theme {
 		color: var(--color-ink);
 	}
 
+	.project-detail__media > figcaption {
+		background-color: var(--color-surface);
+		border-color: var(--color-rule);
+		color: var(--color-ink-2);
+	}
+
+	.project-detail__media > video {
+		color-scheme: dark;
+	}
+
 	.category,
 	.featured-project__link {
 		background-color: var(--color-surface);

@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass: Watch",
+      "type": "shell",
+      "command": "sass.cmd",
+      "args": [
+        "--watch",
+        "src/scss/style.scss:src/css/style.css",
+        "--style=expanded",
+        "--source-map",
+        "--silence-deprecation=import"
+      ],
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "runOptions": {
+        "runOn": "folderOpen",
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Sass: Build",
+      "type": "shell",
+      "command": "sass.cmd",
+      "args": [
+        "src/scss/style.scss",
+        "src/css/style.css",
+        "--style=expanded",
+        "--source-map",
+        "--silence-deprecation=import"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
